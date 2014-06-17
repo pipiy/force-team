@@ -3760,8 +3760,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     float: left;
   }
   .navbar-nav > li > a {
-    padding-top: 22.5px;
-    padding-bottom: 22.5px;
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
   .navbar-nav.navbar-right:last-child {
     margin-right: -15px;
