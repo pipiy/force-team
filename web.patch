@@ -1,0 +1,51 @@
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+index 0000000..c2658d7
+--- /dev/null
++++ b/.gitignore
+@@ -0,0 +1 @@
++node_modules/
+diff --git a/Procfile b/Procfile
+new file mode 100644
+index 0000000..063b78f
+--- /dev/null
++++ b/Procfile
+@@ -0,0 +1 @@
++web: npm start
+diff --git a/package.json b/package.json
+new file mode 100644
+index 0000000..33a0217
+--- /dev/null
++++ b/package.json
+@@ -0,0 +1,18 @@
++{
++  "name": "force-team",
++  "version": "0.0.1",
++  "repository": {
++    "type:": "git",
++    "url": "git@github.com:pipiy/force-team.git"
++  },
++  "dependencies": {
++    "gzippo": "~0.2.0",
++    "express": "~3.5.0"
++  },
++  "engines": {
++    "node": ">=0.8.0"
++  },
++  "scripts": {
++    "start": "node web.js"
++  }
++}
+diff --git a/web.js b/web.js
+new file mode 100644
+index 0000000..cd9af35
+--- /dev/null
++++ b/web.js
+@@ -0,0 +1,7 @@
++var gzippo = require('gzippo');
++var express = require('express');
++var app = express();
++
++app.use(express.logger('dev'));
++app.use(gzippo.staticGzip("" + __dirname));
++app.listen(process.env.PORT || 3003);
