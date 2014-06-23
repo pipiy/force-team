@@ -1,11 +1,10 @@
 /*----------------------------------------------------
- * Copyright 2014 Martin Kucharik
- * http://www.pixelized.cz
- * bootstrap-brands.js
- *
- * Version 1.0
- * Released: 5.2.2014
- * http://creativecommons.org/licenses/by/3.0/
+Project:    Force Team
+Author:     Petya Petinych
+bootstrap-brands.js
+Version:    1.0
+Created:        20/05/2014
+Last change:    22/06/2014
 ----------------------------------------------------*/
 
 $(document).ready(function() {
